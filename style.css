@@ -161,10 +161,20 @@ body {
         justify-content: center;
     }
     .screenshot img {
-        border-radius: 0.75rem;
+        border-radius: 0.5rem;
         box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
         max-width: 100%;
         height: auto;
-        flex: auto;
+        flex: 1 1 45%; /* Deux images par ligne avec un espace de 1rem */
         object-fit: contain;
+    }
+    @media (max-width: 37.5rem) { /* 600px */
+        .screenshot {
+            flex-direction: column;
+            align-items: center;
+        }
+        .screenshot img {
+            flex: none;
+            width: 90%; /* Une image par ligne */
+        }
     }
