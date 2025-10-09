@@ -204,3 +204,9 @@ body {
             width: 90%; /* Une image par ligne */
         }
     }
+footer {
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.9em;
+    color: #666666;
+}
