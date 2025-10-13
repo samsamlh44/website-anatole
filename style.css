@@ -234,6 +234,7 @@ body {
     }
 footer {
     text-align: center;
+    line-height: 1.2;
     padding: 1.25rem;
     font-size: 0.9em;
     color: #666666;
