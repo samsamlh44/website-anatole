@@ -10,8 +10,27 @@
     <title>Politique de confidentialité</title>
     <!--Intégration du favicon-->
     <link rel="icon" type="image/png" href="icons/icon-light-16.png" />
+    <!--Mise en place navbar-->
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
+  <!--Mise en place Navbar-->
+  <nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" lass="navbar-logo">
+  <img src="icons/logo_anatole_light.png" alt="Anatole" height="36">
+</a>
+    <button class="navbar-burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="navbar-links" id="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="infos.html">Infos pratiques</a></li>
+      <li><a href="privacy.html">Politique de confidentialité</a></li>
+      <li><a href="contact.html">Nous contacter</a></li>
+    </ul>
+  </div>
+</nav>
   <!--Affichage du logo et du titre-->
   <div class="header"> <!--En-tête avec le logo-->
       <img src="icons/logo_anatole_light.png" alt="Logo Anatole" width="120" height="120" style="border-radius: 12px;">
@@ -37,10 +56,18 @@
     <div class="retour">
     <a href="index.html">Retour à l'accueil</a>
     </div>
+    <script>
+  const burger = document.getElementById('burger');
+  const links = document.getElementById('nav-links');
+  burger.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+</script>
 </body>
 <!--Pied de page-->
   <footer>
-    <p>&copy; 2025 Anatole. Extension et site développés par Sam Sam. Tous droits réservés.</p>
+    <p>&copy; 2026 Anatole. Extension et site développés par Sam Sam. Tous droits réservés.</p>
     <div class="github-badge"><a href="https://github.com/samsamlh44/anatole" target="_blank" rel="noopener">
   <img src="https://img.shields.io/badge/code%20source-GitHub-181717?logo=github" alt="Code source sur GitHub"></a>
     <p>Code publié sous licence
