@@ -117,7 +117,7 @@ body {
         }
 
   /* Style du formulaire de contact */
-    .form {
+    .form-id {
         display: flex; flex-direction: column; gap: 0.75rem;
         max-width: 31.25rem;
         margin: 0 auto;
@@ -125,10 +125,29 @@ body {
         width: 100%;
         }
 
-        .form input,
-        .form textarea {
+        .form-id input,
+        .form-id textarea {
             width: 100%;
             max-width: 25rem;
+            min-height: 1.5rem;
+            max-height: fit-content;
+            box-sizing: border-box;
+        }
+
+     .form-message {
+        display: flex; flex-direction: column; gap: 0.75rem;
+        max-width: 31.25rem;
+        margin: 0 auto;
+        align-items: center;
+        width: 100%;
+        }
+
+        .form-message input,
+        .form-message textarea {
+            width: 100%;
+            max-width: 25rem;
+            min-height: 5rem;
+            max-height: fit-content;
             box-sizing: border-box;
         }
     
