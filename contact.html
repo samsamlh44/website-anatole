@@ -43,17 +43,7 @@
 
   <form>
   
-   <div class="h-captcha" data-captcha="true"></div>
-    <div class="h-captcha" 
-      data-captcha="true" 
-      data-lang="de" 
-      data-theme="dark"
-      data-onload="myFunction"
-      data-render="explicit"
-      data-size="compact"
-      ></div>
-  
-    <div class="form-id">
+      <div class="form-id">
         <label for="name">Votre nom :</label>
         <input type="text" name="name" required>
 
@@ -64,6 +54,8 @@
     <div class="form-message"> 
         <label for="message">Votre message :</label>
         <textarea name="message" required></textarea>
+
+        <div class="h-captcha" data-captcha="true"></div>
 
         <button type="submit" style="padding: 10px 24px; background-color: #38b6ff; color: #fff; border: none; border-radius: 6px; font-weight: 500; box-shadow: 0 2px 6px rgba(0,0,0,0.08); cursor: pointer;">Envoyer</button>
     </div><br>
@@ -84,19 +76,5 @@
   </footer>
  <script src="navbar.js"></script>
  <script src="https://web3forms.com/client/script.js" async defer></script>
- <script>
-const form = document.getElementById('7c7dd0f7-ef70-4b1b-85a4-89f3dc616191');
-
-form.addEventListener('submit', function(e) {
-
-    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-
-    if (!hCaptcha) {
-        e.preventDefault();
-        alert("Please fill out captcha field")
-        return
-    }
-});
-</script>
 </body>
 </html>
