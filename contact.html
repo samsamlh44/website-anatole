@@ -76,5 +76,19 @@
   </footer>
  <script src="navbar.js"></script>
  <script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+const form = document.getElementById('7c7dd0f7-ef70-4b1b-85a4-89f3dc616191');
+
+form.addEventListener('submit', function(e) {
+
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Veuillez compléter le captcha avant de soumettre le formulaire.");
+        return
+    }
+});
+</script>
 </body>
 </html>
